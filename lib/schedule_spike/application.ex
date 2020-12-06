@@ -8,8 +8,7 @@ defmodule ScheduleSpike.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: ScheduleSpike.Worker.start_link(arg)
-      # {ScheduleSpike.Worker, arg}
+      ScheduleSpike
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
