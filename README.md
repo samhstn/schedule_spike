@@ -1,21 +1,21 @@
 # ScheduleSpike
 
-**TODO: Add description**
+Run the iex shell with:
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `schedule_spike` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:schedule_spike, "~> 0.1.0"}
-  ]
-end
+```bash
+iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/schedule_spike](https://hexdocs.pm/schedule_spike).
+```iex
+# Start a short schedule:
+ScheduleSpike.short()
 
+# Start a medium schedule:
+ScheduleSpike.medium()
+
+# Start a long schedule:
+ScheduleSpike.long()
+
+# Stop all timers
+ScheduleSpike.never()
+```
